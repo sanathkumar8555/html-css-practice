@@ -1,0 +1,74 @@
+body{
+    background-color: #1d1d1d;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    color: #ffffff;
+}
+.navbar{
+    background-color: rgb(11,11,11,0.8);
+    backdrop-filter: blur(12px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.nav-h1{
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin: 0;
+    color:#ffffff;
+}
+.nav-a{
+    display: flex;
+    gap: 24px;
+}
+.nav-a{
+    color:#b0b0b0;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.2s ease;
+
+ }   
+.nav-cont{
+    display: flex;
+    align-items: center;
+    gap:16px;
+}
+.btn-sign{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+.btn-sales{
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px soild rgba(255, 255, 255, 255, 0.2);
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.btn-sales:hover{
+    background-color: rgb(255,255,255,0.05);
+}
+.btn-downlad{
+    background-color: #ffffff;
+    color:#000000;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition:  opacity 0.2s ; 
+}
+.btn-downlad{
+    opacity: 0.9;
+}

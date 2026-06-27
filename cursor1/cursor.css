@@ -1,0 +1,460 @@
+body{
+    background-color: #0b0b0b;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    color: #ffffff;
+}
+.navbar{
+    background-color: rgba(11, 11, 11, 0.8);
+    backdrop-filter: blur(12px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.nav-logo{
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin: 0;
+    color: #ffffff;
+}
+.nav-link{
+    display: flex;
+    gap: 24px;
+}
+.nav-link a{
+    color: #b0b0b0;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+.nav-link a:hover{
+    color: #ffffff;
+
+}
+.nav-content{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.btn-signin{
+    color:#ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.btn-sales{
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 255, 0.2);
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.btn-sales:hover{
+    background-color: rgba(255, 255, 255, 0.05);
+}
+.btn-download{
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+.btn-download{
+    opacity: 0.9;
+}
+.cursor{
+    display: flex;
+    color: #ffffff;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.cursors{
+    display: flex;
+    flex-direction: row;
+    gap:16px;
+    margin-top: 24px;
+}
+.cursor-btn{
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 255, 0.2);
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.cursor-btn:hover{
+    background-color: rgba(255, 255, 255, 0.05);
+
+}
+.cursor-btns{
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 255, 0.2);
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+
+}
+.cursor-btns:hover{
+    opacity: 0.9;
+}
+.Screenshot{
+    width: 100%;
+    max-width: 1000px;
+    padding: 0 20px;
+    margin: 40px auto 0 auto;
+    box-sizing: border-box;
+}
+.Screenshot img{
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+}
+
+.trusted-section {
+    display: flex;
+    flex-direction: column;   
+    align-items: center;      
+    padding: 80px 20px;      
+    background-color: #0b0b0b;
+}
+
+
+.trusted-text {
+    color: #8a8a8a;           
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1px;      
+    text-transform: uppercase;
+    margin-bottom: 32px;     
+}
+
+.logo-row {
+    display: flex;
+    flex-direction: row;      
+    justify-content: center;  
+    align-items: center;      
+    gap: 64px;                
+    flex-wrap: wrap;          
+}
+
+
+.logo-row img {
+    height: 26px;            
+    width: auto;            
+    
+    filter: brightness(0) invert(1); 
+    opacity: 0.35;                   
+    transition: opacity 0.3s ease;
+}
+
+.logo-row img:hover {
+    opacity: 0.8;            
+}
+.features-container {
+    background-color: #0b0b0b;
+    padding: 100px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 120px; 
+}
+
+.feature-row {
+    display: flex;
+    flex-direction: row;     
+    align-items: center;      
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;           
+    gap: 80px;                
+}
+
+.feature-row.reverse {
+    flex-direction: row-reverse; 
+}
+
+.feature-text {
+    flex: 1; 
+}
+
+.feature-image-box {
+    flex: 1; 
+}
+
+.feature-badge {
+    color: #38bdf8; 
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+.feature-text h3 {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0 0 16px 0;
+    color: #ffffff;
+    letter-spacing: -0.5px;
+}
+
+.feature-text p {
+    color: #8a8a8a;
+    font-size: 16px;
+    line-height: 1.6; 
+    margin: 0;
+}
+
+.feature-image-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+.cards-section {
+    background-color: #0b0b0b;
+    padding: 100px 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.cards-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.cards-header h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 12px 0;
+    letter-spacing: -0.5px;
+}
+
+.cards-header p {
+    color: #8a8a8a;
+    font-size: 16px;
+    margin: 0;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 24px; 
+}
+
+.feature-card {
+    background-color: #121212; 
+    border: 1px solid rgba(255, 255, 255, 0.05); 
+    border-radius: 12px;
+    padding: 32px;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.feature-card:hover {
+    border-color: rgba(255, 255, 255, 0.15);
+}
+
+.card-icon {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.feature-card h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0 0 12px 0;
+}
+
+.feature-card p {
+    color: #8a8a8a;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0;
+}
+.testimonials-section {
+    background-color: #0b0b0b;
+    padding: 100px 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+    border-top: 1px solid rgba(255, 255, 255, 0.03); 
+}
+
+.testimonials-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.testimonials-header h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 12px 0;
+    letter-spacing: -0.5px;
+}
+
+.testimonials-header p {
+    color: #8a8a8a;
+    font-size: 16px;
+    margin: 0;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 24px;
+}
+
+.testimonial-card {
+    background-color: #121212; 
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    min-height: 200px; 
+}
+
+.quote {
+    color: #e0e0e0; 
+    font-size: 15px;
+    line-height: 1.6;
+    font-style: italic;
+    margin: 0 0 24px 0;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.user-name {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.user-role {
+    color: #666666; 
+    font-size: 12px;
+}
+.footer-wrapper {
+    background-color: #0b0b0b;
+    padding: 0 40px;
+}
+
+.final-cta {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 120px 0;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05); 
+}
+
+.final-cta h2 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 32px;
+    letter-spacing: -1px;
+}
+
+/* Premium Main CTA Button */
+.btn-download-large {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    padding: 14px 32px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.btn-download-large:hover {
+    opacity: 0.9;
+}
+
+.page-footer {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 0;
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start;
+}
+
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-logo {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+
+.footer-brand p {
+    color: #444444;
+    font-size: 12px;
+    margin: 0;
+}
+
+.footer-links-grid {
+    display: flex;
+    gap: 80px; 
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-column h5 {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 0 4px 0;
+}
+
+.footer-column a {
+    color: #666666;
+    text-decoration: none;
+    font-size: 13px;
+    transition: color 0.2s ease;
+}
+
+.footer-column a:hover {
+    color: #ffffff;
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ChaiCode Registration</title>
+  </head>
+  <body>
+    <h1>ChaiCode Course Registration</h1>
+    
+
+<form action="/register-chaicode" method="POST" enctype="multipart/form-data">
+
+    
+
+    <fieldset>
+
+        <legend>Personal Details</legend>
+
+        <label>Full Name:</label><br>
+
+        <input type="text" name="fullname" placeholder="Enter full name"
+
+               required minlength="3" maxlength="50"><br><br>
+
+        <label>Email:</label><br>
+
+        <input type="email" name="email" placeholder="example@gmail.com"
+
+               required><br><br>
+
+        <label>Phone Number:</label><br>
+
+        <input type="tel" name="phone" placeholder="10-digit number"
+
+               pattern="[0-9]{10}" required><br><br>
+
+        <label>City:</label><br>
+
+        <input list="cities" name="city" placeholder="Select or type city">
+
+        <datalist id="cities">
+
+            <option value="Hyderabad">
+
+            <option value="Bangalore">
+
+            <option value="Chennai">
+
+            <option value="Mumbai">
+
+            <option value="Delhi">
+
+        </datalist>
+
+    </fieldset>
+
+    <br>
+
+    
+
+    <fieldset>
+
+        <legend>Course Details</legend>
+
+        <label>Select Course:</label><br>
+
+        <select name="course" required>
+
+            <option value="">--Select Course--</option>
+
+            <option value="frontend">Frontend Development</option>
+
+            <option value="backend">Backend Development</option>
+
+            <option value="fullstack">Full Stack Development</option>
+
+            <option value="datascience">Data Science</option>
+
+        </select><br><br>
+
+        <label>Learning Mode:</label><br>
+
+        <input type="radio" name="mode" value="online" required> Online
+
+        <input type="radio" name="mode" value="offline"> Offline<br><br>
+
+        <label>Technologies Interested In:</label><br>
+
+        <input type="checkbox" name="skills" value="html"> HTML
+
+        <input type="checkbox" name="skills" value="css"> CSS
+
+        <input type="checkbox" name="skills" value="js"> JavaScript
+
+        <input type="checkbox" name="skills" value="python"> Python
+
+        <input type="checkbox" name="skills" value="sql"> SQL<br><br>
+
+    </fieldset>
+
+    <br>
+
+    
+
+    <fieldset>
+
+        <legend>Additional Information</legend>
+
+        <label>Upload Resume:</label><br>
+
+        <input type="file" name="resume"
+
+               accept=".pdf,.doc,.docx" required><br><br>
+
+        <label>Why do you want to join Chaicode?</label><br>
+
+        <textarea name="message" rows="5" cols="40"
+
+                  placeholder="Write your motivation..." maxlength="300"
+
+                  required></textarea>
+
+    </fieldset>
+
+    <br>
+
+    
+
+    <fieldset>
+
+        <legend>Agreement</legend>
+
+        <input type="checkbox" name="terms" required>
+
+        I agree to the terms and conditions
+
+    </fieldset>
+
+    <br>
+
+    <button type="submit">Submit Registration</button>
+
+</form>
+  </body>
+</html>
